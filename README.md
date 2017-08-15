@@ -34,6 +34,7 @@ As stated above, this repo parses the user text query to determine {1} and 8.
 The function - get_top_num_order_by is defined. This accepts a text query and returns a tuple containing 1 and 8.
 
 While the function still requires work, it is able to handle a number of cases
+
 a) The function is currently completely general, and does not look for specific search terms:
 
 ![flexible](images/flexible.PNG)
