@@ -29,9 +29,13 @@ The function - get_top_num_order_by is defined. This accepts a text query and re
 
 While the function still requires work, it is able to handle a number of cases
 a) The function is currently completely general, and does not look for specific search terms:
+
 ![flexible](images/flexible.png)
 
+
 b) If the function identifies that the user is interested in viewing multiple rows, but no top clause is identified, a configurable default  number of rows (currently 5) are returned.
+
 ![default](images/def_rows_if_no_top_clause.png)
+
 
 c) The function is able to identify the number of rows the query expects:
