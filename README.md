@@ -23,9 +23,13 @@ The general structure of a MS-SQL query is as below:
 where:
 
 {1} - optional TOP clause to limit the number of results.
+
 2   - list of columns to be returned
+
 3   - table(s) to be queried along with the appropriate JOIN clauses
+
 4   - optional filter condition(s)
+
 5   - optional column to group by depending upon the user query
 
 6   - optional filter for use with aggregate functions
@@ -33,7 +37,6 @@ where:
 7   - optional list of columns by which the result set needs to be sorted by
 
 8   - optional clause indicating if the ordering is in ascending or descending order
-
 
 As stated above, this repo parses the user text query to determine {1} and 8.
 The function - get_top_num_order_by is defined. This accepts a text query and returns a tuple containing 1 and 8.
