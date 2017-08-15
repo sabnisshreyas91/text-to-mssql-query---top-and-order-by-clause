@@ -49,10 +49,13 @@ a) The function is currently completely general, and does not look for specific 
 
 ![flexible](images/flexible.PNG)
 
+b) The function is able to identify the number of rows the query expects:
 
-b) If the function identifies that the user is interested in viewing multiple rows, but no top clause is identified, a configurable default  number of rows (currently 5) are returned.
+![flexible](images/num_row.PNG)
 
-![default](images/def_rows_if_no_top_clause.PNG)
+If the function identifies that the user is interested in viewing multiple rows, but no top clause is identified, a configurable default  number of rows (currently 5) are returned.
+
+![default](images/def_rows.PNG)
 
 
-c) The function is able to identify the number of rows the query expects:
+
