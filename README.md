@@ -57,5 +57,10 @@ If the function identifies that the user is interested in viewing multiple rows,
 
 ![default](images/def_rows.PNG)
 
+c) The function is able to recognize cases where there is no explicit order by or top clause specified :
+
+![default](images/no_clause.PNG)
+
+
 
 
