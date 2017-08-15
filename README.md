@@ -8,11 +8,17 @@ As such, NLU (Natural Language Understanding), which deals with Machine Reading 
 The general structure of a MS-SQL query is as below:
 
 [SELECT {1} 2]
+
 [FROM 3]
+
 {WHERE 4}
+
 {GROUP BY 5}
+
 {HAVING 6}
+
 {ORDER BY 7 8} 
+
 
 where:
 {1} - optional TOP clause to limit the number of results.
@@ -30,12 +36,12 @@ The function - get_top_num_order_by is defined. This accepts a text query and re
 While the function still requires work, it is able to handle a number of cases
 a) The function is currently completely general, and does not look for specific search terms:
 
-![flexible](images/flexible.png)
+![flexible](images/flexible.PNG)
 
 
 b) If the function identifies that the user is interested in viewing multiple rows, but no top clause is identified, a configurable default  number of rows (currently 5) are returned.
 
-![default](images/def_rows_if_no_top_clause.png)
+![default](images/def_rows_if_no_top_clause.PNG)
 
 
 c) The function is able to identify the number of rows the query expects:
