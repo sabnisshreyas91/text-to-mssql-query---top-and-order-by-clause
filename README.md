@@ -3,7 +3,13 @@ This repo is part of a larger project that attempts to convert a text query into
 1) How many rows the user query is expected to return
 2) The sort-order of the query (ascending, descending or not specified)
 
-As such, NLU (Natural Language Understanding), which deals with Machine Reading comprehension is considered an AI-complete problem. The problem however can be simplified by imposing certain constraints. This project (in-progress) attempts to convert text questions into mssql queries. The Adventureworks2012 database is used as the back-end database - https://msftdbprodsamples.codeplex.com/.
+As such, NLU (Natural Language Understanding), which deals with Machine Reading comprehension is considered an AI-complete problem. The problem however can be simplified by imposing certain constraints. The development of a Natural Language Interface such as this has several benifits:
+1) Users are freed from the constraints of accessing data available in a set of pre-defined views
+2) Systems can be designed and trained to recognize if, and what kind of visualizations most aptly describe the requested information. Such a development can potentially eliminate the need for designing a large number of fixed reports.
+
+While there are a few implementations to translate Natural Language queries to syntactically valid database queries, I have found no system in place specifically for MS-SQL databases. 
+
+This project (in-progress) attempts to convert text questions into mssql queries. The Adventureworks2012 database is used as the back-end database - https://msftdbprodsamples.codeplex.com/.
 
 The general structure of a MS-SQL query is as below:
 
